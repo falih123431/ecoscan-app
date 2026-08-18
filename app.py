@@ -235,7 +235,7 @@ div.stButton > button:hover {
 @st.cache_resource
 def load_model():
     return tf.keras.models.load_model(
-        "/content/drive/MyDrive/mobilenetv2_waste_classifier.h5"
+        "mobilenetv2_waste_classifier.h5"
     )
 
 
