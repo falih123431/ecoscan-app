@@ -15,8 +15,7 @@ from datetime import datetime
 # PENTING: disimpan di Google Drive, BUKAN di folder Colab.
 # Kalau disimpan di Colab, seluruh data hilang saat sesi berakhir.
 # ============================================================
-DB_PATH = "/content/drive/MyDrive/ecoscan.db"
-
+DB_PATH = "/data/ecoscan.db" if os.path.isdir("/data") else "ecoscan.db"
 
 def koneksi():
     """Membuka koneksi ke database."""
